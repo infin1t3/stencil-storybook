@@ -1,0 +1,17 @@
+:host {
+  display: flex;
+}
+
+.pill {
+  border-radius: 4px;
+  display: inline-block;
+  font-family: 'proxima-nova', 'sans-serif';
+  margin: 1px 2px;
+  padding: 3px 8px;
+
+  img {
+    padding-left: 5px;
+    height: 18px;
+    width: 18px;
+  }
+}
