@@ -1,9 +1,9 @@
 import { html } from 'lit-html';
 import markdown from './readme.md';
-import { eventHandles, action } from '../../../.storybook/helpers/custom-action';
+import { action } from '../../../.storybook/helpers/custom-action';
 
 const customEvents = ['removeButtonResponse'];
-const events = ['mouseover', 'click', ...eventHandles(customEvents)];
+const events = ['mouseover', 'click'];
 
 const args = {
   buttonTitle: 'Story Button',
