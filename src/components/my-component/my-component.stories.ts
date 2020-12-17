@@ -1,9 +1,9 @@
 import { html } from 'lit-html';
 import markdown from './readme.md';
-import { eventHandles, action } from '../../../.storybook/helpers/custom-action';
+import { action } from '../../../.storybook/helpers/custom-action';
 
-const costumEvents = ['clicked'];
-const events = ['mouseover', 'click', ...eventHandles(costumEvents)];
+const customEvents = ['clicked'];
+const events = ['mouseover', 'click'];
 
 const args = {
   modifier: '',
@@ -70,7 +70,7 @@ const Template = (
     middle="${middle}"
     last="${last}">
   </my-component>
-  ${action('my-component', costumEvents)}
+  ${action('my-component', customEvents)}
 `;
 
 export const Default = Template.bind({});
